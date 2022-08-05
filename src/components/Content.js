@@ -19,6 +19,7 @@ export default function Content() {
   } = useMemo(() => sectionChanges(),[]);
 
   return (
+    //context providers
     <ScrollContext.Provider value={{ scrollingElement }}>
       <div className="content-section" ref={scrollingElRef}>
         <Section height={3240}>
